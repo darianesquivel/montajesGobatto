@@ -1,3 +1,5 @@
+// SECTION 1 
+
 .section1Home {
   width: 100%;
   height: 100vh;
@@ -13,6 +15,8 @@
   left: 0;
   z-index: -1;
 }
+
+// SECTION 2 
 
 .section2Home {
   width: 100%;
@@ -40,6 +44,8 @@
   background-color: $primal-color-focus;
 }
 
+// SECTION 3 
+
 .section3Home {
   width: 100%;
   height: 70vh;
@@ -60,6 +66,8 @@
   }
 }
 
+// SECTION 4 
+
 .section4Home {
   width: 100%;
   height: 50vh;
@@ -71,6 +79,8 @@
   color: white;
   text-transform: uppercase;
 }
+
+// SECTION 5 
 
 .section5Home {
   width: 100%;
@@ -118,6 +128,9 @@
   }
 }
 
+
+// SECTION 6 
+
 .section6Home {
   width: 100%;
   height: 50vh;
@@ -129,6 +142,9 @@
   color: white;
   text-transform: uppercase;
 }
+
+
+// SECTION 7 
 
 .section7Home {
   width: 100%;
@@ -155,4 +171,13 @@
   img {
     width: 70% !important;
   }
+}
+
+
+// SECTION 8
+
+.section8Home {
+  width: 100%;
+  height: 70vh;
+  background-color: aquamarine;
 }
