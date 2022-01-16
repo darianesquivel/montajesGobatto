@@ -1,0 +1,158 @@
+.section1Home {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.bgVideo {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.section2Home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: white;
+  }
+}
+
+.cta {
+  border: none;
+  background-color: $primal-color;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.cta:hover {
+  background-color: $primal-color-focus;
+}
+
+.section3Home {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .section3Home__container {
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.section4Home {
+  width: 100%;
+  height: 50vh;
+  background-image: url(../img/fondo1.jpg);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.section5Home {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .section5Home__container {
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .section5Home__cadsContainer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      .section5Home__card {
+        width: 260px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(230, 230, 230);
+
+        i {
+          font-size: 50px;
+        }
+        h3 {
+          text-transform: uppercase;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.section6Home {
+  width: 100%;
+  height: 50vh;
+  background-image: url(../img/fondo2.jpg);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.section7Home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .section7Home__container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    h2 {
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+  }
+}
+
+.carousel-item {
+  img {
+    width: 70% !important;
+  }
+}
