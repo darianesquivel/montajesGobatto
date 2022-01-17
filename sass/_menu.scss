@@ -4,7 +4,6 @@
   z-index: 1;
   background-color: $primal-color !important; // <--- reset bootstrap
   text-transform: uppercase;
-  position: fixed;
 }
 
 .navbar-nav {
@@ -19,4 +18,5 @@
 
 .icono {
   width: 70px;
+  margin-left: 50px;
 }

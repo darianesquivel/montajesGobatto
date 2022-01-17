@@ -1,4 +1,4 @@
-// SECTION 1 
+// SECTION 1 //BGVIDEO
 
 .section1Home {
   width: 100%;
@@ -16,7 +16,7 @@
   z-index: -1;
 }
 
-// SECTION 2 
+// SECTION 2 // PRINCIPAL Y CTA
 
 .section2Home {
   width: 100%;
@@ -44,68 +44,96 @@
   background-color: $primal-color-focus;
 }
 
-// SECTION 3 
+// SECTION 3 // SOBRENOSOTROS
 
 .section3Home {
   width: 100%;
   height: 70vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  background-size: cover;
+  background-repeat: no-repeat;
+
   .section3Home__container {
-    width: 90%;
-    height: 60vh;
+    max-width: 600px;
+    height: 350px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 50px;
 
+    background-color: rgba(200, 200, 200, 0.4);
     h2 {
       text-transform: uppercase;
+      font-weight: 700;
+    }
+    p {
+      text-align: center;
     }
   }
 }
 
-// SECTION 4 
+// SECTION 4 // MONTAJES INDUSTRIALES GOBATO
 
 .section4Home {
   width: 100%;
   height: 50vh;
   background-image: url(../img/fondo1.jpg);
   background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-transform: uppercase;
+  h2 {
+    font-weight: 700;
+    padding: 10px;
+    background-color: rgba(200, 200, 200, 0.4);
+    @media (max-width: 900px) {
+      text-align: center;
+    }
+  }
 }
 
-// SECTION 5 
+// SECTION 5 // SERVICIOS
 
 .section5Home {
   width: 100%;
-  height: 100vh;
-
+  //height: 100vh;
+  margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   .section5Home__container {
     width: 90%;
-    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     h2 {
       text-transform: uppercase;
-      font-weight: 800;
+      font-weight: 700;
     }
 
-    .section5Home__cadsContainer {
+    .section5Home__carsContainer {
       width: 100%;
       display: flex;
       justify-content: center;
       gap: 10px;
+
+      @media (max-width: 830px) {
+        flex-direction: column;
+
+        align-items: center;
+      }
+
       .section5Home__card {
         width: 260px;
         height: 350px;
@@ -114,28 +142,50 @@
         justify-content: space-evenly;
         align-items: center;
         text-align: center;
-        background-color: rgb(230, 230, 230);
+        background-color: rgba(200, 200, 200, 0.4);
 
+        @media (max-width: 1090px) {
+          width: 400px;
+          height: 350px;
+          padding: 10px;
+        }
+
+        @media (max-width: 830px) {
+          width: 100%;
+        }
         i {
           font-size: 50px;
+        }
+        h2 {
+          font-weight: 700;
         }
         h3 {
           text-transform: uppercase;
           font-size: 1rem;
         }
       }
+
+      .twoCards {
+        display: flex;
+        gap: 10px;
+
+        @media (max-width: 1090px) {
+          flex-direction: column;
+        }
+      }
     }
   }
 }
 
-
-// SECTION 6 
+// SECTION 6 // CLIENTES
 
 .section6Home {
   width: 100%;
   height: 50vh;
   background-image: url(../img/fondo2.jpg);
   background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,8 +193,7 @@
   text-transform: uppercase;
 }
 
-
-// SECTION 7 
+// SECTION 7 // TRABAJOS - CARROUSEL
 
 .section7Home {
   width: 100%;
@@ -153,7 +202,7 @@
   justify-content: center;
   align-items: center;
   .section7Home__container {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,22 +211,116 @@
     gap: 20px;
     h2 {
       text-transform: uppercase;
-      font-weight: 800;
+      font-weight: 700;
     }
   }
 }
 
 .carousel-item {
   img {
-    width: 70% !important;
+    width: 80% !important;
   }
 }
 
-
-// SECTION 8
+// SECTION 8 // FONDO IMAGEN
 
 .section8Home {
   width: 100%;
+  height: 50vh;
+  background-image: url(../img/fondo3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+// SECTION 9 // CONTACTO
+
+.section9Home {
+  width: 100%;
   height: 70vh;
-  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-weight: 700;
+  }
+  .section9Home__contianer {
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    form {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      input {
+        border-radius: 5px;
+        padding: 5px;
+        border: 1px solid rgb(124, 124, 124);
+      }
+
+      textarea {
+        border-radius: 5px;
+        padding: 5px;
+        border: 1px solid rgb(124, 124, 124);
+      }
+    }
+  }
+}
+
+//SECTION 10
+
+.section10Home {
+  width: 100%;
+}
+
+.accordion-button {
+  background-color: $primal-color;
+  color: white;
+
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.accordion-button {
+  display: flex;
+  flex-direction: column;
+  height: 54px;
+  border-bottom: 2px solid white;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  color: white;
+  height: 0.05rem;
+  margin-left: auto;
+  content: "";
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ffffff;
+  background-color: $primal-color-focus;
+  background-image: none;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
 }
