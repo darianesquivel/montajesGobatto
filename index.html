@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- carrousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -28,6 +33,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- own carrousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Montajes Industriales Gobatto</title>
@@ -53,10 +63,10 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              <a class="nav-link" href="#">Sobre Nosotros</a>
-              <a class="nav-link" href="#">Servicios</a>
-              <a class="nav-link" href="#">Trabajos</a>
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#nosotros">Sobre Nosotros</a>
+              <a class="nav-link" href="#servicios">Servicios</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
+              <a class="nav-link" href="./trabajos/">Trabajos</a>
             </div>
           </div>
         </div>
@@ -70,26 +80,36 @@
       </section>
       <section class="section2Home">
         <h1>Montajes Industriales Gobatto</h1>
+        <h1 class="big-heading font-light">
+          <span id="js-rotating"
+            >Montajes industriales Gobatto, Trabajos personalizados, Trabajos de
+            calidad, Contactanos!,↓</span
+          >
+        </h1>
         <button class="cta">Contactanos</button>
       </section>
-      <section class="section3Home">
-        <div class="section3Home__container">
+      <section class="section3Home" id="nosotros">
+        <div class="section3Home__description">
           <h2>Sobre nosotros</h2>
           <p>
-            Somos una empresa joven, fundada en el año 2009 con 13 años de
-            experiencia, brindando servicios petrolero, portuarios y navales.
+            Somos una empresa joven, fundada en el año 2009 con
+            <span class="sub">13 años de experiencia</span> brindando servicios
+            petrolero, portuarios y navales.
           </p>
           <p>
-            Contamos con 2 talleres propio situado en la zona industrial de Dock
-            Dud y con la maquinaria adecuada para realizar cualquier tipo de
-            trabajo en los rubros mencionado, contamos con un sector técnico y
-            de ingeniería.
+            Contamos con 2 talleres propios, situado en la zona industrial de
+            Dock Dud y con la maquinaria adecuada para realizar cualquier tipo
+            de trabajo en los rubros mencionado, contamos con un sector técnico
+            y de ingeniería.
           </p>
+          <img src="img/migLogo.svg" alt="" />
         </div>
+        <div class="section3Home__img"></div>
       </section>
       <section class="section4Home">
         <h2>Montajes Industriales Gobatto</h2>
       </section>
+      <section id="servicios"></section>
       <section class="section5Home">
         <div class="section5Home__container">
           <h2>Servicios</h2>
@@ -209,15 +229,44 @@
           <button class="cta">Ver mas</button>
         </div>
       </section>
-      <section class="section8Home"></section>
+      <section class="section8Home">
+        <h2>Nuestros Clientes</h2>
+        <div class="owl-container">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="img/clientes/abengoalogo.svg" alt="" />
+            </div>
+            <div class="item">
+              <img src="img/clientes/bacssalogo.svg" alt="" />
+            </div>
+            <div class="item">
+              <img src="img/clientes/blklogo.svg" alt="" />
+            </div>
+            <div class="item">
+              <img src="img/clientes/siloslogo.svg" alt="" />
+            </div>
+            <div class="item">
+              <img src="img/clientes/shelllogo.svg" alt="" />
+            </div>
+            <div class="item">
+              <img src="img/clientes/vplogo.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contacto"></section>
       <section class="section9Home">
         <div class="section9Home__contianer">
           <h2>Contacto</h2>
-          <form action="">
+          <p>Dejanos tu mensaje y nos pondremos en contacto A LA BREVEDAD</p>
+          <form
+            action="https://formsubmit.co/b88b5996b845e1f5e39a0e20517215f7"
+            method="POST"
+          >
             <input type="text" placeholder="Nombre" />
-            <input type="email" placeholder="Email" />
+            <input type="email" name="email" placeholder="Email" />
             <textarea
-              name=""
+              name="mensaje"
               id=""
               cols="30"
               rows="10"
@@ -263,7 +312,28 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer">
+        <div class="section1Footer"></div>
+        <div class="section2Footer">
+          <div class="logoFooter">
+            <img src="img/migLogo.svg" alt="" />
+          </div>
+        </div>
+        <div class="section3Footer">
+          <a href="https://www.instagram.com/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="copy">
+        <p>© Copyright - Montajes Gobatto 2022 - Desing by Dnwebs</p>
+      </div>
+    </footer>
 
     <!-- bootstrap -->
     <script
@@ -271,5 +341,11 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <!-- own carrousel -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- js -->
+    <script src="js/carrousel.js"></script>
   </body>
 </html>

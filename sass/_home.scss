@@ -27,6 +27,7 @@
   align-items: center;
   h1 {
     color: white;
+    text-align: center;
   }
 }
 
@@ -48,31 +49,67 @@
 
 .section3Home {
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 930px) {
+    flex-direction: column;
+  }
 
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  .section3Home__container {
-    max-width: 600px;
-    height: 350px;
+  .section3Home__description {
+    width: 45%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    padding: 50px;
+    text-align: center;
 
-    background-color: rgba(200, 200, 200, 0.4);
     h2 {
       text-transform: uppercase;
       font-weight: 700;
+      margin-bottom: 50px;
     }
+
     p {
-      text-align: center;
+      font-size: 1.1rem;
+      padding-left: 50px;
+      padding-right: 50px;
+      font-weight: 500;
+      @media (max-width: 550px) {
+        font-size: 0.9rem;
+      }
+    }
+
+    // .sub {
+    //   background-color: #f6951e;
+    //   padding: 5px;
+    //   border-radius: 7px;
+    // }
+    img {
+      width: 230px;
+      padding: 20px;
+      border-radius: 10px;
+      @media (max-width: 550px) {
+        width: 150px;
+      }
+    }
+    @media (max-width: 930px) {
+      margin-top: 20px;
+      width: 90%;
+    }
+  }
+
+  .section3Home__img {
+    width: 45%;
+    height: 60vh;
+    background-image: url("/img/grupoTrabajo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 200px 0px 200px 0px;
+    @media (max-width: 930px) {
+      display: none;
     }
   }
 }
@@ -106,8 +143,8 @@
 .section5Home {
   width: 100%;
   //height: 100vh;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,7 +214,7 @@
   }
 }
 
-// SECTION 6 // CLIENTES
+// SECTION 6 // SIN CONTENIDO
 
 .section6Home {
   width: 100%;
@@ -197,11 +234,14 @@
 
 .section7Home {
   width: 100%;
-  height: 100vh;
+  //height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
   .section7Home__container {
+    z-index: -1;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -222,20 +262,49 @@
   }
 }
 
-// SECTION 8 // FONDO IMAGEN
+// SECTION 8 // CLIENTES
 
 .section8Home {
   width: 100%;
-  height: 50vh;
-  background-image: url(../img/fondo3.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 30vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  text-transform: uppercase;
+
+  h2 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  //carrousel
+
+  .owl-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+  }
+  .owl-carousel {
+    width: 90%;
+  }
+
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 7rem;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+  }
+
+  .owl-dots,
+  .owl-nav {
+    display: none;
+  }
 }
 
 // SECTION 9 // CONTACTO
@@ -247,6 +316,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
 
   h2 {
     font-weight: 700;
@@ -259,11 +330,16 @@
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    text-align: center;
     form {
-      width: 80%;
+      width: 600px;
       display: flex;
       flex-direction: column;
       gap: 10px;
+
+      @media (max-width: 650px) {
+        width: 100%;
+      }
       input {
         border-radius: 5px;
         padding: 5px;
@@ -274,6 +350,8 @@
         border-radius: 5px;
         padding: 5px;
         border: 1px solid rgb(124, 124, 124);
+        max-height: 250px;
+        min-height: 250px;
       }
     }
   }
@@ -288,16 +366,14 @@
 .accordion-button {
   background-color: $primal-color;
   color: white;
-
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 .accordion-button {
   display: flex;
   flex-direction: column;
   height: 54px;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
 }
 
 .accordion-button::after {

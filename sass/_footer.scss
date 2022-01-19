@@ -1,5 +1,62 @@
 footer {
   width: 100%;
   height: 30vh;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: $primal-color;
+}
+
+.footer {
+  width: 95%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+// .section1Footer {
+// }
+
+// .section2Footer {
+// }
+
+.section3Footer {
+  i {
+    color: white;
+    font-size: 30px;
+    margin: 5px;
+  }
+}
+
+.logoFooter {
+  width: 100px;
+  img {
+    width: 100px;
+  }
+}
+
+// MEDIAQUERYS
+
+@media (max-width: 600px) {
+  .section4Home {
+    width: 95%;
+    height: 60vh;
+  }
+
+  .logoFooter {
+    img {
+      width: 80px;
+    }
+  }
+
+  .copy {
+    font-size: 0.7rem;
+  }
+
+  .section1Footer {
+    display: none;
+  }
 }
