@@ -25,10 +25,99 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h1 {
-    color: white;
+
+  //-----
+
+  .rw-wrapper {
+    width: 100%;
+    position: relative;
+    //margin: 110px auto 0 auto;
+    //font-family: "Imprima", sans-serif;
+    padding: 10px;
+  }
+  .rw-sentence {
+    margin: 0;
     text-align: center;
   }
+  .rw-sentence span {
+    color: rgb(255, 255, 255);
+    font-size: 120%;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  }
+  .rw-words {
+    //display: inline;
+    text-indent: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .rw-words-1 span {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    color: $primal-color;
+    -webkit-animation: rotateWord 18s linear infinite 0s;
+    -moz-animation: rotateWord 18s linear infinite 0s;
+    -o-animation: rotateWord 18s linear infinite 0s;
+    -ms-animation: rotateWord 18s linear infinite 0s;
+    animation: rotateWord 18s linear infinite 0s;
+  }
+  .rw-words-1 span:nth-child(2) {
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+    animation-delay: 3s;
+    color: $primal-color-focus;
+  }
+  .rw-words-1 span:nth-child(3) {
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+    color: $primal-color;
+  }
+  .rw-words-1 span:nth-child(4) {
+    -webkit-animation-delay: 9s;
+    -moz-animation-delay: 9s;
+    -o-animation-delay: 9s;
+    -ms-animation-delay: 9s;
+    animation-delay: 9s;
+    color: $primal-color-focus;
+  }
+  .rw-words-1 span:nth-child(5) {
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+    color: $primal-color;
+  }
+  .rw-words-1 span:nth-child(6) {
+    -webkit-animation-delay: 15s;
+    -moz-animation-delay: 15s;
+    -o-animation-delay: 15s;
+    -ms-animation-delay: 15s;
+    animation-delay: 15s;
+    color: $primal-color-focus;
+  }
+
+  @media screen and (max-width: 768px) {
+    .rw-sentence {
+      font-size: 1.3rem;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .rw-sentence {
+      font-size: 1rem;
+    }
+  }
+
+  //----
 }
 
 .cta {
@@ -39,9 +128,12 @@
   border-radius: 5px;
   text-transform: uppercase;
   transition: 0.5s;
+  text-decoration: none;
+  z-index: 5;
 }
 
 .cta:hover {
+  color: white;
   background-color: $primal-color-focus;
 }
 
@@ -176,11 +268,13 @@
         height: 350px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         text-align: center;
+        gap: 50px;
+        border-radius: 15px;
         background-color: rgba(200, 200, 200, 0.4);
-
+        padding: 0px 20px 0px 20px;
         @media (max-width: 1090px) {
           width: 400px;
           height: 350px;
@@ -224,10 +318,16 @@
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   text-transform: uppercase;
+}
+
+.counter {
+  text-align: center;
+  font-size: 8rem;
 }
 
 // SECTION 7 // TRABAJOS - CARROUSEL
@@ -236,10 +336,12 @@
   width: 100%;
   //height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  gap: 10px;
   .section7Home__container {
     z-index: -1;
     width: 90%;

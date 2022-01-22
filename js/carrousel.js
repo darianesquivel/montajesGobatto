@@ -1,6 +1,6 @@
 $(".owl-carousel").owlCarousel({
   autoplay: true,
-  autoplayTimeout: 3000,
+  autoplayTimeout: 2000,
   autoplayHoverPause: true,
   loop: true,
   margin: 40,
@@ -18,11 +18,44 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
-$("#js-rotating").Morphext({
-  // Animation type (refer to Animate.css for a list of available animations)
-  animation: "fadeInDown",
-  // An array of words to rotate are created based on this separator. Change it if you wish to separate the words differently (e.g. So Simple | Very Doge | Much Wow | Such Cool)
-  separator: ",",
-  // The delay between each word in milliseconds
-  speed: 3000,
+// -----
+
+$(window).on("load", function () {
+  $(window)
+    .scroll(function () {
+      var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+      $(".section6Home").each(function () {
+        let objectBottom = $(this).offset().top + $(this).outerHeight();
+        if (objectBottom < windowBottom) {
+          // Objeto en la vista
+
+          $(".counter").each(function () {
+            var $this = $(this),
+              countTo = $this.attr("data-count");
+
+            $({ countNum: $this.text() }).animate(
+              {
+                countNum: countTo,
+              },
+
+              {
+                duration: 3000,
+                easing: "linear",
+                step: function () {
+                  $this.text(Math.floor(this.countNum));
+                },
+                complete: function () {
+                  $this.text(this.countNum);
+                },
+              }
+            );
+          });
+
+          // Objeto en la vista
+        } else {
+          // Objeto fuera de la vista
+        }
+      });
+    })
+    .scroll();
 });

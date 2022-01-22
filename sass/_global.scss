@@ -8,5 +8,22 @@
 $primal-color: #f6931e;
 $primal-color-focus: #f6741e;
 
-// $primal-color: #d42222;
-// $primal-color-focus: #921515;
+// $primal-color: #307392;
+// $primal-color-focus: #225066;
+
+//prueba
+
+#intro.home-video .overlay {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+  padding: 20% 0;
+}
+
+#section-video .overlay {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+  padding: 60px 0;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
+}
