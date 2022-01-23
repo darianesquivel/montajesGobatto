@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Somos una importante empresa de montajes industriales de zona sur, con mas de 13 años de experiencia"
+    />
+    <meta
+      name="keywords"
+      content="montajes, gobatto, industrial, industriales, torneria, soldadura, fisura, estructuras, plataformas, caballetes, maquinas, mejoras, reparaciones, reparacion, hidraulica, naval, navales, grua, excavadora, retro palas, reparacion naval, terrestre, cañeria, in situ, retificado, torneria "
+    />
 
     <!-- carrousel -->
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
@@ -46,7 +54,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href=".."
             ><img class="icono" src="img/migLogo.svg" alt=""
           /></a>
           <button
@@ -79,20 +87,18 @@
         </video>
       </section>
       <section class="section2Home">
-        <section class="rw-wrapper">
+        <section class="rw-wrapper slide-in-top">
           <h1 class="rw-sentence">
-            <span>Montajes industriales Gobatto<br /> </span>
+            <span class="sombra">Montajes industriales Gobatto<br /></span>
             <div class="rw-words rw-words-1">
               <span>Trabajos personalizados</span>
-              <span>Trabajos de calidad</span>
-              <span>Trabajos personalizados</span>
-              <span>Trabajos de calidad</span>
-              <span>Trabajos personalizados</span>
+              <span>de calidad</span>
+              <span>a medida</span>
+              <span>Reparaciones in situ y en taller</span>
+              <span><i class="fas fa-angle-double-down"></i></span>
             </div>
           </h1>
         </section>
-
-        <!-- <button class="cta">Contactanos</button> -->
       </section>
       <section class="section3Home" id="nosotros">
         <div class="section3Home__description">
@@ -119,34 +125,28 @@
       <section class="section5Home">
         <div class="section5Home__container">
           <h2>Servicios</h2>
-          <div class="section5Home__carsContainer">
-            <div class="twoCards">
-              <div class="section5Home__card">
-                <i class="fas fa-atom"></i>
-                <h3>soldadura de todo tipo y en alta presión</h3>
-              </div>
-              <div class="section5Home__card">
-                <i class="fas fa-atom"></i>
-                <h3>torneria, rectificado in situ y en taller.</h3>
-              </div>
-            </div>
-            <div class="twoCards">
-              <div class="section5Home__card">
-                <i class="fas fa-atom"></i>
-                <h3>Montaje instrustrial y servicio.</h3>
-              </div>
-              <div class="section5Home__card">
-                <i class="fas fa-atom"></i>
-                <h3>Servicio navales.</h3>
-              </div>
-            </div>
-          </div>
+          <h3>Servicios navales.</h3>
+          <h3>
+            Trabajos de
+            <span class="resaltado transf">soldadura de todo tipo</span> y en
+            alta presión.
+          </h3>
+          <h3>
+            Torneria, rectificado
+            <span class="resaltado transf"> in situ y en taller.</span>
+          </h3>
+          <h3>
+            <span class="resaltado transf"> Montaje instrustrial</span> y
+            servicio.
+          </h3>
+
+          <a class="cta resaltado heartbeat" href="./trabajos/">y mucho mas</a>
         </div>
       </section>
       <section class="section6Home">
-        <i class="fas fa-globe-americas"></i>
+        <!-- <i class="fas fa-globe-americas"></i>
         <p>Empleados</p>
-        <div class="counter" data-count="150">0</div>
+        <div class="counter" data-count="150">0</div> -->
       </section>
       <section class="section7Home">
         <div class="section7Home__container">
@@ -244,26 +244,52 @@
           </div>
         </div>
       </section>
-      <section id="contacto"></section>
-      <section class="section9Home">
+      <section class="section9Home" id="contacto">
+        <h2>Contacto</h2>
         <div class="section9Home__contianer">
-          <h2>Contacto</h2>
-          <p>Dejanos tu mensaje y nos pondremos en contacto A LA BREVEDAD</p>
-          <form
-            action="https://formsubmit.co/b88b5996b845e1f5e39a0e20517215f7"
-            method="POST"
-          >
-            <input type="text" placeholder="Nombre" />
-            <input type="email" name="email" placeholder="Email" />
-            <textarea
-              name="mensaje"
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Mensaje"
-            ></textarea>
-            <button class="cta">Enviar</button>
-          </form>
+          <div class="info">
+            <h4>Ponete en contacto!</h4>
+
+            <div class="data">
+              <i class="fas fa-envelope"></i>
+              <p class="datos">brenda@montajesgobato.com</p>
+            </div>
+
+            <div class="data">
+              <i class="fas fa-envelope"></i>
+              <p class="datos">damian@montajesgobato.com</p>
+            </div>
+
+            <div class="data">
+              <i class="fas fa-mobile-alt"></i>
+              <p class="datos">11 1111 1111</p>
+            </div>
+            <div class="data">
+              <i class="fas fa-map-marker"></i>
+              <p class="datos">
+                Génova 1910, B1871 Dock Sud, Provincia de Buenos Aires.
+              </p>
+            </div>
+          </div>
+
+          <div class="form">
+            <form
+              id="form"
+              action="https://formspree.io/f/mgedodbr"
+              method="POST"
+            >
+              <input type="text" placeholder="Nombre" />
+              <input type="email" name="_replyto" placeholder="Email" />
+              <textarea
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+              ></textarea>
+              <button class="cta" type="submit">Enviar</button>
+            </form>
+          </div>
         </div>
       </section>
       <section class="section10Home">
@@ -337,6 +363,10 @@
     <script src="js/owl.carousel.min.js"></script>
 
     <!-- js -->
-    <script src="js/carrousel.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/alertas.js"></script>
+
+    <!-- sweetalert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

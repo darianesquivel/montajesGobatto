@@ -39,7 +39,7 @@ $(window).on("load", function () {
               },
 
               {
-                duration: 3000,
+                duration: 1000,
                 easing: "linear",
                 step: function () {
                   $this.text(Math.floor(this.countNum));
@@ -59,3 +59,26 @@ $(window).on("load", function () {
     })
     .scroll();
 });
+
+const $form = document.querySelector("#form");
+
+$form.addEventListener("submit", handleSubmit);
+
+async function handleSubmit(e) {
+  e.preventDefault();
+  const form = new FormData(this);
+  const response = await fetch(this.action, {
+    method: this.method,
+    body: form,
+    headers: {
+      Accept: "application/json",
+    },
+  });
+
+  if (response.ok) {
+    this.reset();
+    alertSucc("Gracias por escribirnos! Te contactaremos a la brevedad.");
+  } else {
+    alertError("Algo salio mal, intentalo nuevamente.");
+  }
+}
