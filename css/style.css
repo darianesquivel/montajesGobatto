@@ -138,6 +138,11 @@
           align-items: center;
 }
 
+.section2Home .whatsapp {
+  display: block;
+  position: static;
+}
+
 .section2Home .rw-wrapper {
   width: 100%;
   position: relative;
