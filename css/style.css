@@ -1156,7 +1156,7 @@ footer {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background-color: rgba(46, 132, 206, 0.7);
+  background-color: #f6951ec2;
   content: "";
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -1165,10 +1165,6 @@ footer {
 .sectionTrabajos .tz-gallery .lightbox:hover:after,
 .sectionTrabajos .tz-gallery .lightbox:hover:before {
   opacity: 1;
-}
-
-.sectionTrabajos .baguetteBox-button {
-  background-color: transparent !important;
 }
 
 @media (max-width: 768px) {
